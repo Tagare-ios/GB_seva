@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseFile</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>let equ = "ax^2 + bx + c = 0"
+
+let a = 5
+let b = 10
+let c = 6
+//  D = b^2 − 4 a c
+let discriminant =  b*b-(4*a*c)
+
+if discriminant == 0 {
+    let radical = (b-1)/2*a
+    print("У уравнения \(equ) один корень и он равен \(radical)")
+} else if discriminant &lt; 0{
+    print("У уравнения \(equ) есть мнимые корни т.е они принадлижат комплексным числам")
+}else{
+    let radicalOne = (b-1-discriminant)/(2*a)
+    let radicalTwo = (b-1+discriminant)/(2*a)
+    print("У уравнения \(equ) два корня \(radicalOne) и \(radicalTwo)")
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 522}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

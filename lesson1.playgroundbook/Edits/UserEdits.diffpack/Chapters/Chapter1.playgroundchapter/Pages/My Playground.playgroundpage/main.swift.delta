@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>var deposite:Double = 10764.0
+var percent:Double = 6.5
+var year:Double = 5
+var monthInYear:Double = 12
+var percentMonth:Double = (percent/monthInYear)
+var totalMonth:Double = year*12
+var addDepositIn:Double = 0
+
+while addDepositIn &lt; totalMonth {
+    var profit:Double = deposite/100*percentMonth
+    
+    addDepositIn += 1
+    deposite += profit
+    print(deposite)
+}
+if addDepositIn &gt;= totalMonth{
+    print("срок вашего депозита подошел к концу, вы можете забрать на кассе \(deposite)")
+}
+    
+    
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 503}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
