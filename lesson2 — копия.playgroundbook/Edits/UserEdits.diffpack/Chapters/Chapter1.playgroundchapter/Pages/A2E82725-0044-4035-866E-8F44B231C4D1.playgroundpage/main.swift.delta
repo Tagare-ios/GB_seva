@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseFile</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// 4. Удалить из этого массива все четные числа и все числа, которые не делятся на 3.
+
+var array: Array&lt;Int&gt; = []
+array.append(contentsOf: 1...100)
+
+
+for (index, value) in array.enumerated() {
+    print(index, value)
+    if ((value % 2) == 0 || (value % 3) == 0) {
+        
+        array.remove(at: array.firstIndex(of: value)!)
+        print("удалил \(index) и его число \(value)")
+    }
+}
+print(array)
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 405}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
